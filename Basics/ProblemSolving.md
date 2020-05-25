@@ -4,9 +4,9 @@
 ## Identify and Understand the Nature of the Problem:
 - Try to define the Problem
 - Then Break it down into smaller chunks
-### Context:
-### Issue
-### Why do I care?
+  - Context:
+  - Issue
+  - Why do I care?
 
 ## Research and Refine
 - Discuss and Understand the Solution that is available Online
