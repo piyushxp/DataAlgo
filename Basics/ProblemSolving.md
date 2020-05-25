@@ -1,6 +1,5 @@
 # Problem-Solving 101.
-
-# A Problem-Statement is Given
+- When a Problem-Statement is given =>
 
 ## Identify and Understand the Nature of the Problem:
 - Try to define the Problem
