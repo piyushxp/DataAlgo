@@ -1,21 +1,32 @@
 # Linked List:
 
-Every Linked lIst consist of Nodes
+#### Every Linked lIst consist of Nodes
 - Every Node has 2 Components
   - Data
   - Next
-- Data stores data nd Next points to another Node
+- Data stores data and Next points to another Node
 - The start of the List is called as HEad,This is a pointer
 - If we want to iterate through the list,the Head Pointer has to move along the List,that is why Accessing an element in Linkedlist in O(n)
 - "NULL" depicts the end of the List
 
 ## Array V/s Linked List:
-- 1. in Array  => Insertion/Deletion --> O(n)  2.Access an element --> O(1)
-- 2. in Linked Lis =>Insertion/Deletion --> O(1)  2.Access an element --> O(n)
+- 1. in Array  
+  - Insertion/Deletion --> O(n)  
+  - 2.Access an element --> O(1)
+- 2. in Linked Lis 
+  - Insertion/Deletion --> O(1) 
+  -  2.Access an element --> O(n)
 - Array has contiguous Memory(so access is O(n)) while LinkedList doesn't.
 
 
-## LInked lIst --> Insertion:
+## Linked-List:
+- Prepend - O(1) --> add at beginning
+- Append - O(1)   --> add at end
+- Lookup - O(n)  --> traversal
+- Insert - O(n)  --> One by one ,to Insert
+- Delete - O(n)   --> one by one, to delete
+
+## LInked list - Insertion:
 ### Append - single Linked List:
 
 ```python
@@ -29,3 +40,19 @@ class LinkedList:
 
 
 ```
+
+#### Glance:
+- Pseudocode in JS: 
+  ```js
+  const basket = ['apples','grapes','pears']
+
+  Linked-List : apples --> grapes --> pears
+
+  apples
+  7867  --> grapes
+            6767  --> pears
+                      7868 --> null
+  ```
+
+- Why Linked-List are better than other DS?
+ Try [visualalgo.net](https://visualalgo.net) -- Create,Insert,remove Nodes 
