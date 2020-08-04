@@ -41,7 +41,7 @@ class LinkedList:
 
 ```
 
-#### Glance:
+## Javascript Glance:
 - Pseudocode in JS: 
   ```js
   const basket = ['apples','grapes','pears']
@@ -56,3 +56,65 @@ class LinkedList:
 
 - Why Linked-List are better than other DS?
  Try [visualalgo.net](https://visualalgo.net) -- Create,Insert,remove Nodes 
+
+
+ ### What is Pointer:
+ - Pointers are simply variables that store the address of an object. 
+ - It is simply a reference
+ 
+ #### Demo:
+ ```js
+ 
+ 10--> 5 --> 16
+
+//Visualize
+ let myLinkedList = {
+   head:{
+     value: 10
+     next:{
+       value: 5,
+       next:{
+         value:16,
+         next:null
+       }
+     }
+   }
+ }
+
+//LETS BUILD
+ class LinkedList{
+   constructor(value)
+   this.head = {
+     value:value,
+     next: null
+   }
+   this.tail =  this.head
+   this.length = 1
+
+//APPEND
+   append(value){
+     const newNode= {
+       value:value,
+       next:null
+     }
+     this.tail.next = newNode
+     this.tail = newNode
+     this.length++
+     return this
+   }
+ }
+
+ const myLinkedList = new LinkedList(10)
+myLinkedList.append(5)
+myLinkedList.append(16)
+
+/*
+
+LinkedList {
+  head: { value: 10, next: { value: 5, next: [Object] } },
+  tail: { value: 16, next: null },
+  length: 3
+}
+*/
+ 
+ ```
